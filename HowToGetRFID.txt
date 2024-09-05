@@ -1,0 +1,1 @@
+clue? use curl POST with headers X-CSRF-TOKEN #goodluck
