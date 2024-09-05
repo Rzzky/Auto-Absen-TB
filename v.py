@@ -32,9 +32,6 @@ def absensi(rfid_number):
         
         kelas_element = driver.find_element(By.XPATH, '//span[@class="text-gray-500 fw-semibold d-block fs-7"]')
         nama_kelas = kelas_element.text
-        
-        pesan = f"ABSEN BERHASIL!!\nNama Siswa: {nama_siswa}\nKelas: {nama_kelas}\nRFID Number: {rfid_number}\nPada Jam: {JamAbsen}"
-        requests.post('https://api.telegram.org/bot7025791191:AAGeTAFKqDWtGbDEuRhGYE9xU7E_lHfaQ7c/sendMessage?chat_id=-4208361630&text=' + pesan)
 
         time.sleep(2)  
     except Exception as e:
